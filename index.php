@@ -45,21 +45,24 @@ $array_faq = [
     <head>
         <meta charset="utf-8">
         <title>Domande frequenti-Privacy e termini</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container-faq">
             <?php //con il foreach creo un div per ogni faq
             foreach($array_faq as $faq) { ?>
                 <div class="faq">
-                    <h1 class="domanda">
+                    <h2 class="domanda">
                         <?php echo $faq['domanda'] ;
                         echo '<br>';
-
+                    
                         ?>
-                    </h1>
+                    </h2>
                     <p class="risposta">
                         <?php
                         echo $faq['risposta'];
+                        echo '<br>';
+
                         ?>
                     </p>
 
