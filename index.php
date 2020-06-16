@@ -34,10 +34,39 @@ $array_faq = [
 // var_dump($array_faq);
 
 //con il ciclo foreach stampo dinamicamente in pagina la domanda e la rispettiva risposta senza impostare il file html
-foreach ($array_faq as $faq) {
-    echo $faq['domanda'] . '<br>' . $faq['risposta'];
-    echo '<br>';
-    echo '<br>';
-}
-
+// foreach ($array_faq as $faq) {
+//     echo $faq['domanda'] . '<br>' . $faq['risposta'];
+//     echo '<br>';
+//     echo '<br>';
+// }
 ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Domande frequenti-Privacy e termini</title>
+    </head>
+    <body>
+        <div class="container-faq">
+            <?php //con il foreach creo un div per ogni faq
+            foreach($array_faq as $faq) { ?>
+                <div class="faq">
+                    <h1 class="domanda">
+                        <?php echo $faq['domanda'] ;
+                        echo '<br>';
+
+                        ?>
+                    </h1>
+                    <p class="risposta">
+                        <?php
+                        echo $faq['risposta'];
+                        ?>
+                    </p>
+
+                </div>
+                <?php
+            } ?>
+
+        </div>
+    </body>
+</html>
