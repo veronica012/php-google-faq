@@ -4,14 +4,84 @@
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+    font-family: Roboto,arial,sans-serif;
     color: rgba(0,0,0,0.87);
     font-size: 14px;
     font-weight: 400;
 }
+a {
+    text-decoration: none;
+}
+header {
+    background-color: white;
+    border-bottom: 1px solid rgba(151,151,151,0.5);
+    padding: 24px 24px 0 24px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.header-top {
+    display: flex;
+}
+#link-privacy {
+    color: #3c4043;
+    font-family: "product sans","open sans",arial,sans-serif;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 7px;
+    vertical-align: top;
+}
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.header-left {
+    height: 50px;
+    width: 60%;
+}
+.nav {
+    padding: 15px 15px 0 0;
+}
+.nav li {
+    display: inline-block;
+}
+.nav li {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.43;
+    margin: 0 42px 0 0;
+    padding: 0;
+}
+.nav li a {
+    color: #5f6368;
+}
+#link-faq {
+    color: #3367d6;
+}
+.header-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: #5f6368;
+}
+.header-right img {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
 .container-faq {
+    padding-top: 130px;
     width: 978px;
     margin:auto;
+    padding-bottom: 32px;
 }
 h2 {
     color: #3c4043;
@@ -24,4 +94,33 @@ p {
     letter-spacing: .2px;
     line-height: 24px;
     padding-top: 20px;
+}
+p a {
+    color: #3367d6;
+}
+footer {
+    background: #f5f5f5;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    line-height: 2.19;
+    list-style: none;
+    padding: 10px 15px 10px 15px;
+}
+.container-footer {
+    width: 978px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li:after {
+    content: ' \00B7';
+}
+footer ul li a {
+    color: rgba(61,61,61,.8);
+}
+select {
+    width: 200px;
 }
